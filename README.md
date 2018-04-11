@@ -1,2 +1,2 @@
 # IRCbot
-IRC btot to get hosts on twitch
+IRC bot to get hosts on twitch
