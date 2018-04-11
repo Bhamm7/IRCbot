@@ -15,10 +15,12 @@ PASSWORD = 'oauth:5nnti14gcr18214zsq23wt7728e5h7'
 CHANNEL = 'electricalskateboard'
 # How many seconds between your spams
 INTERVAL = 5
+PLUG_INTERVAL = 3
 # Total seconds to spam for
 HOST_DURATION = 60
 # Spam command
 COMMAND = '!hostme'
+PLUG_COMMAND = 'zeegers mom has got it goin on\nzeegers mom has got it goin on\nzeegers cant you see ur just not the dude for me\nI know it may be wrong but im in love with zeegers mom'
 
 #########################################################
 #########################################################
@@ -48,6 +50,9 @@ def SpamHost():
         SendData("PRIVMSG #" + CHANNEL + " :" + COMMAND)
         print('Sent command: ' + COMMAND)
         time.sleep(INTERVAL)
+        SendData("PRIVMSG #" + CHANNEL + " :" + PLUG_COMMAND)
+        print('Sent command: ' + PLUG_COMMAND)
+        time.sleep(PLUG_INTERVAL)
         currentTime = time.time()
     print("Hosting period ended.\n")
 
